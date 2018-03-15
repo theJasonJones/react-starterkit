@@ -1,7 +1,7 @@
 {
   "name": "JJStarterKit",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.jsx",
   "author": "Jason Jones",
   "license": "MIT",
   "scripts": {
@@ -12,10 +12,7 @@
     "start": "webpack-dev-server --open"
   },
   "lint-staged": {
-    "*.{js,jsx,json}": [
-      "prettier --trailing-comma all --write",
-      "git add"
-    ]
+    "*.{js,jsx,json}": ["prettier --trailing-comma all --write", "git add"]
   },
   "prettier": {
     "printWidth": 80

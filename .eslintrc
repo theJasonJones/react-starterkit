@@ -1,0 +1,24 @@
+{
+  extends: [
+    "airbnb",
+    "prettier",
+    "prettier/react",
+    "prettier/standard"
+  ],
+  plugins: ["react"],
+  settings: {
+    "import/resolver": "webpack",
+  },
+  env: {
+    browser: true,
+    jest: true
+  },
+  rules: {
+    import/no-extraneous-dependencies: [
+      error,
+      {
+        devDependencies: ["**/*-test.js*"],
+      },
+    ],
+  },
+}
