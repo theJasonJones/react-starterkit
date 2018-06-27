@@ -1,12 +1,11 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
 import ReactDOM from "react-dom";
 
-import "./index.css";
+import theme from "./theme/main";
 
 const Wrapper = styled.div`
-  background: linear-gradient(to bottom, #f6e6b4 0%, #ed9017 100%);
-  color: white;
+  background: linear-gradient(to bottom, #54a3ff 0%, #0066e2 100%);
   height: 100%;
 `;
 
@@ -20,17 +19,19 @@ const InnerWrapper = styled.div`
 `;
 
 const Heading = styled.h1`
-  color: white;
-  text-shadow: 1px 1px 1px #c1c1c1;
+  color: ${theme.colors.white};
+  text-shadow: 1px 1px 1px ${theme.colors.gray};
   font-size: 2.5rem;
 `;
 
 const App = () => (
-  <Wrapper>
-    <InnerWrapper>
-      <Heading>You can start me up...</Heading>
-    </InnerWrapper>
-  </Wrapper>
+  <ThemeProvider theme={theme}>
+    <Wrapper>
+      <InnerWrapper>
+        <Heading>You can start me up...</Heading>
+      </InnerWrapper>
+    </Wrapper>
+  </ThemeProvider>
 );
 
 ReactDOM.render(<App />, document.getElementById("app"));
