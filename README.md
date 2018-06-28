@@ -4,7 +4,9 @@ The point of this repo is so I can have a headstart for when I begin up new proj
 
 ## Development
 
-1.  `yarn start` to get the webpack server up and running
+1.  `yarn start` - to get the webpack server up and running
+
+2. `yarn lint` - Check the code against 
 
 ## Notable Packages
 
