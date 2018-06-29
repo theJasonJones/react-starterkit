@@ -31,7 +31,7 @@ The point of this repo is so I can have a headstart for when I begin up new proj
 
 ## TODO
 
-1. ~~ Add `styled-components`. ~~
+1. ~~Add `styled-components`.~~
 2.  Add `axios`.
 3.  Add `next.js`?.
 4.  Add `react-router`
