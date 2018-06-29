@@ -3,10 +3,11 @@
 The point of this repo is so I can have a headstart for when I begin up new projects. Feel free to edit as needed.
 
 ## Development
+1. `yarn install` - Might have to include `--ignore-engines` 
 
-1.  `yarn start` - to get the webpack server up and running
+2.  `yarn start` - to get the webpack server up and running
 
-2. `yarn lint` - Check the code against 
+3. `yarn lint` - Check the code against 
 
 ## Notable Packages
 
@@ -30,7 +31,7 @@ The point of this repo is so I can have a headstart for when I begin up new proj
 
 ## TODO
 
-1.  Add `styled-components`.
+1. ~~ Add `styled-components`. ~~
 2.  Add `axios`.
 3.  Add `next.js`?.
 4.  Add `react-router`
